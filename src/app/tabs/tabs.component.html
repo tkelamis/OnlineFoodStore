@@ -1,0 +1,8 @@
+<div *ngIf="listOfTabs.length > 0" class="tabs">
+  <a *ngFor="let tab of listOfTabs" routerLink="/tags/{{tab.name}}">{{tab.name}}({{tab.count}})</a>
+</div>
+
+<div *ngIf="listOfTabsPerFood" class="tabs2">
+  <a *ngFor="let tagName of listOfTabsPerFood" routerLink="/tags/{{tagName}}">{{tagName}}</a>
+</div>
+
